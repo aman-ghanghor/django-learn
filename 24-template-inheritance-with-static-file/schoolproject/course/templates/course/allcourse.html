@@ -1,0 +1,29 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block title %} All Course {% endblock title %}
+
+{% block csslink %}
+  {{block.super}}
+  <link rel="stylesheet" href="{% static 'course/css/course.css' %}">
+{% endblock csslink %}
+
+
+
+
+
+{% block content %}
+  <h1> All Courses </h1>
+  <div class="course">
+    <h3> 1. Python Course</h3>
+    <img src="{% static 'course/image/python.jpg' %}" alt="python">
+  </div>
+  <div class="course">
+    <h3> 2. Django Course</h3>
+    <img src="{% static 'course/image/django.jpg' %}" alt="django">
+  </div>
+{% endblock content %}
+
+
+
+

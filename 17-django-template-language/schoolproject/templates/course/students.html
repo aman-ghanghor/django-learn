@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> course | Student </title>
+    <style>
+      body {
+         background-color: thistle;
+         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      li {        
+        font-size: 1.25rem;
+        color: rgb(182, 79, 0);
+      }
+    </style>
+</head>
+<body>
+
+
+
+    <h1>Hello Students</h1>
+    
+    <!-- <ul>
+        {% for nm in names %}
+          {% if forloop.first %}
+            <li style="color: green"> {{nm}} </li>
+          {% else %}
+            <li> {{nm}}  </li>
+          {% endif %}
+        {% empty %}
+           <h3> List is empty </h3>
+        {% endfor %}
+    </ul> -->
+    
+
+    <ol>
+        {% for key, value in student.items %}
+          <li>
+            <ul>
+              {% for k, v in value.items %}
+                  <li> {{k}} = {{v}} </li>
+              {% endfor %}
+            </ul>
+          </li>
+          <br>
+        {% endfor %}
+    </ol>
+
+    
+
+    
+</body>
+</html>

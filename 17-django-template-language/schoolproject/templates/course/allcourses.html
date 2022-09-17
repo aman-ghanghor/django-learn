@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course</title>
+
+    <style>
+      body {
+        background-color: rgb(255, 210, 244);
+      }
+      h1, h3 {
+        color: rgb(32, 0, 174);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 600;
+      }
+      h3 {
+        font-size: 1.25rem;
+        color: rgb(46, 46, 46);
+      }
+      a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>All Courses</h1>
+    <p> {{allcourses|length}} courses available </p>
+    <ul>
+      <li>
+        <h3> <a href="./course-python"> {{allcourses.0}} </a></h3>
+      </li>
+      <li>
+        <h3> <a href="./course-django"> {{allcourses.1}} </a></h3>
+      </li>
+    </ul>
+  </body>
+</html>
+
+
+
+

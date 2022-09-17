@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Course  |  {{cname}} </title>
+
+    <style>
+      body {
+        background-color: rgb(255, 210, 244);
+      }
+      h1 {
+        color: rgb(32, 0, 174);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 600;
+      }
+      h4 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.25rem;
+        color: rgb(82, 82, 82);
+      }
+      p {
+        font-size: 1.125rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.5;
+        width: 50%;
+        color: rgb(0, 47, 255);
+      }
+    </style>
+  </head>
+  <body>
+
+    <div>
+      <h1> {{cname|capfirst}} Course </h1>
+      <hr >
+      <h4> Duration : {{duration}} </h4>
+      {% if seats > 5 %}
+        <h4> Seats : {{seats}} </h4>
+      {% endif %}
+      <!-- 3000.6758 -->
+      <h4> Price : Rs. {{price | floatformat:-2}} </h4>
+      <h4> Upload Date : {{upload_date | date:"SHORT_DATE_FORMAT"}} </h4>
+      <h4> Description - </h4>
+      <p>
+        {{ desc|truncatewords:40 }}
+      </p>
+    </div>
+
+
+
+
+  </body>
+</html>

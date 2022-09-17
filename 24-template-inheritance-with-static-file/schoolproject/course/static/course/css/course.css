@@ -1,0 +1,14 @@
+
+body {
+  background-color: rgb(244, 244, 244);
+  
+}
+
+h1 {
+    color: rgb(39, 193, 0);
+}
+
+.course img {
+    width: 200px;
+    border: 5px solid rgb(255, 0, 0);
+}

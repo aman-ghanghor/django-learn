@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> All Course </title>
+    <link rel="stylesheet" href="{% static 'course/css/allcourse.css' %}">
+    
+    <script src="{% get_static_prefix %}course/js/hello.js"></script>
+
+</head>
+<body>
+
+
+    <h1>All Course</h1>
+    <hr>
+    <a class="course-div" href="./course-python">
+       <h2> Python Course </h2>
+       <img src="{% get_static_prefix %}course/image/python.jpg" alt="">
+    </a>
+    <br> <br>
+    <a class="course-div" href="./course-python">
+       <h2> Django Course </h2>
+       <img src="{% get_static_prefix %}course/image/django.jpg" alt="">
+    </a>    
+
+    
+</body>
+</html>

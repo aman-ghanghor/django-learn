@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course</title>
+    <link rel="stylesheet" href="{% static 'css/course.css' %}" />
+  </head>
+  <body>
+
+    <div>
+      <h1 class="title">{{cname}} Course</h1>
+      <img src="{% get_static_prefix %}image/python.jpg" alt="" />
+      <h4>author : {{author}} </h4>
+      <h4>Description - </h4>
+      <p> {{desc}} </p>
+    </div>
+
+
+  </body>
+</html>

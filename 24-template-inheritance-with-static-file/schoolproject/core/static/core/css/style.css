@@ -1,0 +1,61 @@
+
+body {
+    background-color: rgb(229, 237, 255);
+}
+
+ul, li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+   font-family: Cambria;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+p {
+    font-family: Cambria;
+    font-size: 1.125rem;
+    color: rgb(44, 44, 44);
+    font-weight: 300;
+    line-height: 1.25;
+}
+
+.nav {
+    display: flex;
+    padding: 1rem;
+    border: 1px solid rgb(198, 198, 198);
+}
+
+.nav-item a{
+    padding: 0.35rem 0.75rem;
+    margin: 0 0.25rem;
+    font-family: Cambria;
+    font-size: 1.125rem;
+}
+
+.nav-item a:hover{
+    cursor: pointer;
+    background-color: rgb(221, 185, 255);
+}
+
